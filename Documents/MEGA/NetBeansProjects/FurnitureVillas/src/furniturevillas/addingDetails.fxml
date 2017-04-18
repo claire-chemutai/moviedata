@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addNEditAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="800.0" styleClass="furnitureVillas" stylesheets="@furnitureVillas.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="furniturevillas.AddingDetailsController">
+   <children>
+      <Label layoutX="183.0" layoutY="2.0" prefHeight="55.0" prefWidth="351.0" text="FURNITURE VILLAS" textFill="#0ee3be">
+         <font>
+            <Font name="System Bold Italic" size="38.0" />
+         </font>
+      </Label>
+      <Pane fx:id="addNeditPane" layoutX="177.0" layoutY="66.0" prefHeight="306.0" prefWidth="363.0">
+         <children>
+            <Label layoutX="25.0" layoutY="41.0" text="Name" />
+            <Label layoutX="25.0" layoutY="75.0" text="PhoneNumber" />
+            <Label layoutX="30.0" layoutY="110.0" text="Address" />
+            <Label layoutX="28.0" layoutY="184.0" text="Quantity" />
+            <Label layoutX="28.0" layoutY="217.0" prefHeight="17.0" prefWidth="91.0" text="Duration in days" />
+            <Label layoutX="29.0" layoutY="145.0" text="Item" />
+            <TextField fx:id="addNameID" layoutX="118.0" layoutY="37.0" />
+            <TextField fx:id="addPhoneID" layoutX="118.0" layoutY="71.0" />
+            <TextField fx:id="addAddressID" layoutX="118.0" layoutY="106.0" />
+            <TextField fx:id="addQuantityID" layoutX="118.0" layoutY="180.0" />
+            <Button fx:id="DoneAddDetailBtn" layoutX="118.0" layoutY="255.0" mnemonicParsing="false" onAction="#DoneAddDetailAction" prefHeight="25.0" prefWidth="59.0" text="ADD" />
+            <Button fx:id="cancelAddDetailBtn" layoutX="205.0" layoutY="255.0" mnemonicParsing="false" onAction="#cancelAddDetailAction" text="CANCEL" />
+            <Label layoutX="118.0" layoutY="6.0" prefHeight="17.0" prefWidth="149.0" text="ADD DETAILS" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="addItemID" layoutX="118.0" layoutY="141.0" prefWidth="150.0" />
+            <Button fx:id="doneAddBtn" layoutX="292.0" layoutY="255.0" mnemonicParsing="false" onAction="#buttonDoneAdding" text="DONE" />
+            <TextField fx:id="addDurationField" layoutX="119.0" layoutY="213.0" />
+         </children></Pane>
+      <MenuBar layoutX="650.0" layoutY="4.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="HOME">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" text="Home" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Account">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Log Out" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

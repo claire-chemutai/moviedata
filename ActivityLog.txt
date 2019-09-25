@@ -1,0 +1,8 @@
+Jul 27, 2019 11:45:40 PM moviedataassesment.MovieDataAssesment main
+INFO: connect database
+Jul 27, 2019 11:45:41 PM moviedataassesment.MovieDataAssesment main
+INFO: insert title
+Jul 27, 2019 11:45:42 PM moviedataassesment.MovieDataAssesment main
+INFO: insert genres
+Jul 27, 2019 11:45:42 PM moviedataassesment.MovieDataAssesment main
+INFO: display genres
